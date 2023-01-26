@@ -1,0 +1,15 @@
+.
+├── database
+├── downloads
+│   ├── Clinvar_db_generation
+│   │   └── __pycache__
+│   └── icgc_rawfiles
+├── scripts
+│   └── __pycache__
+└── tools
+    └── annovar
+        ├── example
+        └── humandb
+            └── genometrax-sample-files-gff
+
+12 directories

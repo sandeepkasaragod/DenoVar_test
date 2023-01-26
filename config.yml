@@ -1,0 +1,77 @@
+#database directory, do not modify this dir name 
+db_dir : database
+
+#backend database path, (this database will be created by the program)
+db_path : database/db.txt
+
+#backend database download location
+download_path: downloads
+
+#clinvar url location, change if hg19 to be used in the analysis
+clinvar_url : ftp://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/
+
+#clinvar file to be downloaded from the NCBI FTP [file name required]*
+clinvar_file : clinvar_20220328.vcf.gz
+
+# COSMIC file to be downloaded from COSMIC webesite, this file need to     be dowloaded manually and add the file name here, for more visit the README section [file name required]*
+cosmic_file : CosmicGenomeScreensMutantExport.tsv.gz
+
+#does not require any modification, default path will be [database_path]/icgc_rawfiles [no modification requires]
+icgc_dir_path : icgc_rawfiles
+
+#ICGC README file to be downloaded from "https://dcc.icgc.org/api/v1/download?fn=/release_28/Projects/README.txt
+icgc_readme : README.txt
+
+#ICGC url, the program automatically downloads the database 
+icgc_url : https://dcc.icgc.org/api/v1/download?fn=/release_28/Projects/
+
+#do not modifiy this location unless necessary
+enst_acc : database/ENST_and_NP_acc.txt.gz
+
+#do not modifiy this location unless necessary
+nm_acc : database/NM_NP_acc.txt.gz
+
+#refseq url, visit NCBI website to get the latest database, change url if hg19 database to be used
+refseq_url : https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/latest_assembly_versions/GCF_000001405.39_GRCh38.p13/
+
+#refseq protein database file name from the FTP location, change file name if hg19 database to be used
+refseq_file : GCF_000001405.39_GRCh38.p13_protein.faa.gz
+
+#hg38 gtf url, change file name as per the genome build hg19 or hg38
+gtf_url : https://ftp.ncbi.nlm.nih.gov/genomes/refseq/vertebrate_mammalian/Homo_sapiens/latest_assembly_versions/GCF_000001405.39_GRCh38.p13/
+
+#hg38 gft file name , change file name as per the genome build hg19 or hg38
+gtf_file : GCF_000001405.39_GRCh38.p13_genomic.gtf.gz
+
+#ANNOVAR tool location
+annovar_path : tools/annovar
+
+#genome build, this parameter is used to downlond the ANNOVAR backend database, change if hg19 or hg18 required
+genome_build : hg38
+
+#input file with peptide information
+input_file : test_input_with_protein_acc.txt
+
+#output directory where the results are stored
+output : results # output dir
+
+#enzyme used in the proteomics data analysis
+enzyme : Trypsin
+
+#minimum lenght of amino acid to be considered for the analysis
+aa_min_len : 7 # minimum peptide lenght
+
+#maximum lenght of amino acid to be considered for the analysis
+aa_max_len : 35 
+
+#number of missed cleavage used in the proteomics analysis
+max_cleavage : 2
+
+#does the input file contains the protein accession?. write No if doesn't
+protein_accession : "Yes"
+
+#temp path where blast pre-processings are saved 
+temp : temp
+
+#cpu threads
+threads : 10

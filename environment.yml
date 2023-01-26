@@ -1,0 +1,13 @@
+name: DenoVar
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python
+  - pip
+  - pandas
+  - urllib3
+  - snakemake
+  - perl
+  - blast=2.10.0
