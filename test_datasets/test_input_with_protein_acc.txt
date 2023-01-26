@@ -1,0 +1,2 @@
+peptides	protein_accession
+LLSDLLPPSTGTFQEAQSR	NP_006280.3
