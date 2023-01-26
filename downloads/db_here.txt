@@ -1,0 +1,1 @@
+COSMIC database requires to be downloaded and placed on this directory. Clinvar and ICGC database are downloaded here and preprocessed to create the final database
